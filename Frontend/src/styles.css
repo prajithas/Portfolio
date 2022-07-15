@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:ital,wght@0,200;0,400;0,500;0,700;1,400&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.bg-image{background-image: url(./assets/img/bg-image-1.jpg);}
+.bg-image-1{
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.breadcrumb-inner .title {
+    font-weight: 700;
+    line-height: 1.4;
+    font-size: 42px;
+    margin: 0;
+}
+.fontpoppins{font-family:Poppins, sans-serif;}
+.bg-fbook{
+    background-color: #3b5998;
+}
+.bg-twitter{
+    background-color: #00acee;
+}
+.bg-linkedin{
+    background-color: #0e76a8;
+}
+.fontMontserrat{font-family :"Montserrat",sans-serif;}
+.breadcrumb-inner .page-list {
+    margin-top: 19px;
+}
+.breadcrumb-inner .page-list li {
+    display: inline-block;
+    color: #c6c9d8;
+    position: relative;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.breadcrumb-inner .page-list li.separator {
+    padding: 0 20px;
+}
+.breadcrumb-inner .page-list li.separator:before {
+    content: "";
+    background: #c6c9d8;
+    opacity: .3;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    position: absolute;
+    left: 20px;
+    top: -5px;
+}
+.breadcrumb-inner .page-list li.item-current {
+    color: skyblue;
+}
+.section {
+    position: relative;
+    padding: 6.5rem 0;
+    overflow: hidden;
+}

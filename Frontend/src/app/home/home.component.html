@@ -1,0 +1,113 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 home-bg">
+            <div class="inner text-left px-5"> 
+                <span>Based in Cochi,Kerala,India</span>
+                <h1 class="title" @fadeSlide>Hello, I’m <span>Prajitha</span> Welcome to my World.</h1>
+                <a routerLink="portfolio" class="btn btn-dark">View My Works</a>  
+                <a routerLink="contact" class="text-primary btn btn-link">Contact me <fa-icon [icon]="faArrowAltCircleDown"></fa-icon></a>
+            </div>
+        </div>
+        <!-- services -->
+        <section id="services" class="section" >
+            <div class="container">
+                <div class="row">
+                    <p class="text-center mb-2 pspan" @fadeIn><span class="bg-primary text-dark px-2">What I Do?</span></p>
+                    <h2 class="text-center text-10 fw-600 mb-5 " @flyInOut>How I can help your next project</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4" @fadeIn>
+                      <div class="service">
+                        <div class="inner">
+                          <div class="icon"><fa-icon [icon]="faDisplay"></fa-icon></div>
+                          <div class="content">
+                            <h4 class="title"><a href="#!">Web Design</a></h4>
+                            <p class="description">A strong online presence is an effective medium of displaying your product & services among your target audience, and we understand its magnitude for small businesses as well.</p>
+                            <a class="read-more-button" href="#!"><fa-icon [icon]="faArrowRight"></fa-icon></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4" @fadeIn>
+                      <div class="service">
+                        <div class="inner">
+                          <div class="icon"><fa-icon [icon]="faPencilRuler"></fa-icon></div>
+                          <div class="content">
+                            <h4 class="title"><a href="#!">Web Development</a></h4>
+                            <p class="description">Now you manage your website and carry on with your update of contents on a regular basis with our CMS service. As the Web development firm we not only let you add the product...</p>
+                            <a class="read-more-button" href="#!"><fa-icon [icon]="faArrowRight"></fa-icon></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4" @fadeIn>
+                      <div class="service">
+                        <div class="inner">
+                          <div class="icon"><fa-icon [icon]="faBullhorn"></fa-icon></div>
+                          <div class="content">
+                            <h4 class="title"><a href="#!">Digital Marketing</a></h4>
+                            <p class="description">A strong online presence is an effective medium of displaying your product & services among your target audience, and we understand its magnitude for small businesses as well.</p>
+                            <a class="read-more-button" href="#!"><fa-icon [icon]="faArrowRight"></fa-icon></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- services -->
+        <!-- testimonial -->
+        <section id="testimonial" class="section bg-blue">
+          <div class="row">
+            <p class="text-center mb-2 pspan" @fadeIn><span class="bg-primary text-dark px-2">Client Speak</span></p>
+            <h2 class="text-center text-10 fw-600 mb-5 " @flyInOut>What some of my clients say</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-9 mx-auto" >
+        <owl-carousel-o [options]="customOptions" *ngIf='testimonials && testimonials.length'>
+            <ng-template carouselSlide *ngFor="let testimonial of testimonials">
+              <div class="slide text-center" >
+               
+                <p class="text-5 text-dark"> <span class="text-9 text-primary float-left"><fa-icon [icon]="faQuoteLeft"></fa-icon></span>{{testimonial.Message}}<span class="text-9 text-primary"><fa-icon [icon]="faQuoteRight"></fa-icon></span></p>
+                <div class="text-center fontpoppins text-secondary ">
+                  <img class="img-fluid d-inline-block w-auto rounded-circle shadow"
+                  [src]='testimonial.ImageUrl'
+                  [title]="testimonial.clientName"
+                  [style.width.px]="imageWidth"
+                  [style.height.px]="imageHeight"
+                 >
+                
+                <strong class="d-block text-3 fw-500">{{testimonial.clientName}}</strong> 
+                <span>{{testimonial.clientPosition}}</span>
+                </div>
+              </div>
+            </ng-template>
+                      
+          </owl-carousel-o>
+        </div>
+      </div>
+        </section>
+        <!-- testimonial -->
+        <section id="contact" class="section bg-light">
+          <div class="container-fluid">
+            <div class="row">
+                <p class="text-center mb-2 pspan" @fadeIn><span class="bg-primary text-dark px-2">Get in touch</span></p>
+                <h2 class="text-center text-10 fw-600 mb-5 ">For any inquiries please email</h2>
+                <p class="text-center text-9">prajithas@gmail.com</p>
+                <div class="text-center mt-4">
+                  <span class="text-9 bg-fbook rounded-circle py-2 px-3">
+                    <a href="#" target="_blank" class="text-white"><fa-icon [icon]="faFacebookF"></fa-icon></a>
+                  </span>
+                  <span class="text-9 bg-twitter rounded-circle py-2 px-3 mx-2">
+                    <a href="#" target="_blank" class="text-white"><fa-icon [icon]="faTwitter"></fa-icon></a>
+                  </span>
+                  <span class="text-9 bg-linkedin text-white rounded-circle py-2 px-3">
+                    <a href="#" target="_blank" class="text-white"><fa-icon [icon]="faLinkedin"></fa-icon></a>
+                  </span>
+                </div>
+            </div>
+            
+          </div>
+        </section>
+    </div>
+</div>

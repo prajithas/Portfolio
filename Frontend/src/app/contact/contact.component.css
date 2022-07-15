@@ -1,0 +1,34 @@
+.section-title .title {
+    margin: 10px 0 20px;
+    font-size: 40px;
+    line-height: 1.4074;
+}
+.section-title .sub-title {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color:skyblue;
+}
+.single-service {
+    box-shadow: 0 25px 70px rgb(0 0 0 / 7%);
+    background: #fff;
+    padding: 40px;
+    border-radius: 5px;
+}
+.single-service:before {
+    border-radius: 5px;
+}
+.single-service .service {
+    display: flex;
+}
+.service .icon{margin-right:30px;}
+.service .content .title{
+    margin-bottom: 19px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.4074;
+}
+.service.content p {
+    font-size: 16px;
+    line-height: 30px;
+}
